@@ -28,7 +28,7 @@ func main() {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/hello", postHandle).Methods("POST")
-	fmt.Println("Servidor escuchando en el puerto 3000")
+	fmt.Println("Servidors escuchando en el puerto 3000")
 
 	err := http.ListenAndServe(":3000", router)
 	if err != nil {
